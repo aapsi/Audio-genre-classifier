@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <img class="mySlides" src="https://fbcoverstreet.com/thumbnail/RMAps5Pj4xFCm1SZEUASjfhHWIgcqgy55D9sq1gUgmH1ipMFcEkSq3Hvn2SkXv2X.webp" style="width:100%">
+    </section>
+    
+    
+    <div style="color:black">
+        <form action="/predict" method="POST">
+            <section class="w3-container w3-content w3-center" style="max-width:600px">
+                <h2 class="w3-wide" style= "font-family: monospace">MUSIC GENRE CLASSIFIER</h2>
+            </section>
+            <h3 style= "font-family: monospace">Acousticness</h3>
+            <input id="acousticness" name="acousticness" type="number " required="required" placeholder="0.98856">
+            <h3 style= "font-family: monospace">Danceability</h3><input id="danceability" name="danceability" type="number " required="required" placeholder="0.25568">
+            <h3 style= "font-family: monospace">Energy</h3><input id="energy" name="energy" type="number " required="required" placeholder="0.97856">
+            <h3 style= "font-family: monospace">Instrumentalness</h3><input id="instrumentalness" name="instrumentalness" type="number " required="required" placeholder="0.97856">
+            <h3 style= "font-family: monospace">Liveness</h3><input id="liveness" name="liveness" type="number " required="required" placeholder="0.12856">
+            <h3 style= "font-family: monospace">Speechiness</h3><input id="speechiness" name="speechiness" type="number " required="required" placeholder="0.05856">
+            <h3 style= "font-family: monospace">Tempo</h3><input id="tempo" name="tempo" type="number " required="required" placeholder="90.856">
+            <h3 style= "font-family: monospace">Valence</h3><input id="valence" name="valence" type="number " required="required" placeholder="0.03856">
+            <br><br><button id="sub" type="submit ">PREDICT GENRE</button>
+            <br>
+
+        </form>
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+     <section>
+        <img class="mySlides" src="https://fbcoverstreet.com/thumbnail/RMAps5Pj4xFCm1SZEUASjfhHWIgcqgy55D9sq1gUgmH1ipMFcEkSq3Hvn2SkXv2X.webp" style="width:100%">
+    </section>
+    <style>
+        body {
+            text-align: center;
+            padding: 0px;
+        }
+         
+        
+        
+        #sub {
+            width: 200px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: red;
+        }
+        
+        #acousticness {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #danceability {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #energy {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #instrumentalness {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #liveness {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #speechiness {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #tempo {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #valence {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
